@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
@@ -50,7 +51,7 @@ class _ScanState extends State<Scan> {
                 )
               : Container(
                   padding: const EdgeInsets.all(8),
-                  child: Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
+                  child: const Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
                 ),
         ),
       ],
