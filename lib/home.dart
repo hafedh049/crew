@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback(
-      (timeStamp) {
+      (duration timeStamp) {
         _screensController.jumpToPage(currentIndex);
       },
     );
