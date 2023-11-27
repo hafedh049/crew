@@ -3,6 +3,7 @@ import 'package:crew/utils/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:hive/hive.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class Home extends StatefulWidget {
@@ -87,9 +88,9 @@ class _HomeState extends State<Home> {
         onTap: () => FocusScope.of(context).unfocus(),
         child: Padding(
           padding: const EdgeInsets.all(24),
-          child: FutureBuilder<bool>(
+          child: FutureBuilder<Box>(
               future: load(),
-              builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
+              builder: (BuildContext context, AsyncSnapshot<Box> snapshot) {
                 return PageView.builder(
                   itemCount: 4,
                   controller: _screensController,
