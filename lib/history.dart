@@ -61,6 +61,7 @@ class _HistoryState extends State<History> {
                         ],
                       ),
                       Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           IconButton(
                             onPressed: () async {
