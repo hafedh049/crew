@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
         hoverColor: Colors.grey.shade800,
         haptic: true,
         tabBorderRadius: 5,
-        tabActiveBorder: Border.all(color: Colors.black, width: 1),
+        tabActiveBorder: Border.all(color: grey, width: 1),
         tabBorder: Border.all(color: Colors.grey, width: 0),
         curve: Curves.easeOutExpo,
         duration: 500.ms,
