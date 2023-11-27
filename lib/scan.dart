@@ -79,7 +79,7 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () () async {
+              onTap: () async {
                 await _controller!.flipCamera();
                 setState(() => _isBack = true);
               },
