@@ -37,7 +37,7 @@ class _HistoryState extends State<History> {
                               child: const Text("Content", style: TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
                             ),
                             const SizedBox(width: 10),
-                            Flexible(child: Text(_data[index]["text"], style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w300))),
+                            Flexible(child: Text(_data[index]["text"], style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w300))),
                           ],
                         ),
                         const SizedBox(height: 20),
