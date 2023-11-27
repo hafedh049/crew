@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
         rippleColor: Colors.grey.shade700,
         hoverColor: Colors.grey.shade800,
         haptic: true,
-        tabBorderRadius: 15,
+        tabBorderRadius: 5,
         tabActiveBorder: Border.all(color: Colors.black, width: 1),
         tabBorder: Border.all(color: Colors.grey, width: 1),
         curve: Curves.easeOutExpo,
