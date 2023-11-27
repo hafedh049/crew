@@ -20,16 +20,15 @@ class _ScanState extends State<Scan> {
 
   void _onQRViewCreated(QRViewController controller) {
     _controller = controller;
-    _controller!.scannedDataStream.listen(
-        (Barcode scanData) {setState(
-              () {
-                _isOpened = false;
-                _isBack = false;
-                _isFlash = false;
-              },
-            );}
-            box!.put(key, value);
-        );
+    _controller!.scannedDataStream.listen((Barcode scanData) {
+      setState(
+        () {
+          _isOpened = false;
+          _isBack = false;
+          _isFlash = false;
+        },
+      );
+    });
   }
 
   @override
