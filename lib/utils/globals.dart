@@ -3,6 +3,7 @@ import 'package:crew/history.dart';
 import 'package:crew/owner.dart';
 import 'package:crew/scan.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 
 const Color pink = Colors.pinkAccent;
 const Color grey = Color.fromARGB(255, 51, 56, 66);
@@ -17,3 +18,4 @@ final List<Map<String, dynamic>> screens = <Map<String, dynamic>>[
 ];
 
 int currentIndex = 0;
+Box? box;
