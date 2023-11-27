@@ -89,16 +89,17 @@ class _HomeState extends State<Home> {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: FutureBuilder<Box>(
-              future: load(),
-              builder: (BuildContext context, AsyncSnapshot<Box> snapshot) {
-                return PageView.builder(
-                  itemCount: 4,
-                  controller: _screensController,
-                  physics: const BouncingScrollPhysics(),
-                  onPageChanged: (int index) => currentIndex = index,
-                  itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
-                );
-              }),
+            future: load(),
+            builder: (BuildContext context, AsyncSnapshot<Box> snapshot) {
+              return PageView.builder(
+                itemCount: 4,
+                controller: _screensController,
+                physics: const BouncingScrollPhysics(),
+                onPageChanged: (int index) => currentIndex = index,
+                itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+              );
+            },
+          ),
         ),
       ),
     );
