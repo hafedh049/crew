@@ -42,12 +42,12 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: FontAwesome.user,
-            text: '',
+            text: 'Owner',
             onPressed: () {},
           ),
           GButton(
             icon: Bootstrap.clock_history,
-            text: 'Profile',
+            text: 'History',
             onPressed: () {},
           )
         ],
