@@ -5,7 +5,7 @@
         android:icon="@mipmap/ic_launcher">
         <provider
             android:name="com.superlist.super_native_extensions.DataProvider"
-            android:authorities="${}.SuperClipboardDataProvider"
+            android:authorities="${applicationName}.SuperClipboardDataProvider"
             android:exported="true"
             android:grantUriPermissions="true" >
         </provider>
