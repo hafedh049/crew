@@ -18,8 +18,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
       bottomNavigationBar: GNav(
         tabMargin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        rippleColor: Colors.grey.shade700,
-        hoverColor: Colors.grey.shade800,
+        rippleColor: grey.shade700,
+        hoverColor: grey.shade800,
         haptic: true,
         tabBorderRadius: 5,
         curve: Curves.linear,
