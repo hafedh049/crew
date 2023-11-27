@@ -4,7 +4,7 @@ import 'package:crew/owner.dart';
 import 'package:crew/scan.dart';
 import 'package:flutter/material.dart';
 
-const Color teal = Colors.tealAccent;
+const Color pink = Colors.pinkAccent;
 const Color grey = Color.fromARGB(255, 51, 56, 66);
 const Color white = Colors.white;
 
