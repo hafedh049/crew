@@ -65,7 +65,7 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () => setState(() => _start = true),
+              onTap: () => setState(() => _isOpened = true),
               child: Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
