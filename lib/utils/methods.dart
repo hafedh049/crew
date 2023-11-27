@@ -12,7 +12,7 @@ void showSnack(String msg, BuildContext context) {
   final snackBar = SnackBar(
     elevation: 0,
     behavior: SnackBarBehavior.floating,
-    backgroundColor: Colors.transparent,
+    backgroundColor: transparent,
     content: AwesomeSnackbarContent(
       title: 'On Snap!',
       message: 'This is an example error message that will be shown in the body of snackbar!',
