@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pretty_qr_code/pretty_qr_code.dart';
 
 class Generate extends StatefulWidget {
   const Generate({super.key});
