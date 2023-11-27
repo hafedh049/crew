@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.clock_history,
             text: 'History',
-            onPressed: () {},
+            onPressed: () => currentIndex = 3,
           )
         ],
       ),
