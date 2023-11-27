@@ -14,6 +14,6 @@ class _ScanState extends State<Scan> {
   );
   @override
   Widget build(BuildContext context) {
-    return PrettyQrView(qrImage: _qrImage);
+    return Center(child: PrettyQrView(qrImage: _qrImage));
   }
 }
