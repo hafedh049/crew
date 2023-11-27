@@ -10,6 +10,8 @@ class Generate extends StatefulWidget {
 
 class _GenerateState extends State<Generate> {
   final QrImage _qrImage = QrImage(QrCode(8, QrErrorCorrectLevel.H));
+  final TextEditingController _inputController = TextEditingController();
+
   @override
   void dispose() {
     // TODO: implement dispose
