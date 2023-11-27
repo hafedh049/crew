@@ -50,6 +50,7 @@ class _ScanState extends State<Scan> {
                   onQRViewCreated: _onQRViewCreated,
                 )
               : InkWell(
+                  hoverColor: transparent,
                   onTap: () {},
                   child: Container(
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
