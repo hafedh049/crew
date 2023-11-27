@@ -11,6 +11,7 @@ class Scan extends StatefulWidget {
 }
 
 class _ScanState extends State<Scan> {
+  bool _start = false;
   final GlobalKey<State> _qrKey = GlobalKey<State>(debugLabel: 'QR');
   Barcode? result;
   QRViewController? controller;

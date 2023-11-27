@@ -23,4 +23,3 @@ while True:
             print(status_output.replace('D','Deleted',1))
             run(['git', 'commit', '-m', status_output.replace('D','Deleted',1)]) 
         
-        sleep(5)
