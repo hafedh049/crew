@@ -81,7 +81,6 @@ class _ScanState extends State<Scan> {
               },
               child: AnimatedContainer(
                 duration: 700.ms,
-                margin: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
                 child: Text(_isOpened ? "STOP" : "START", style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
