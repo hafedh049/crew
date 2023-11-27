@@ -17,9 +17,7 @@ void showSnack(String msg, BuildContext context) {
     content: AwesomeSnackbarContent(
       title: 'Snack!',
       message: msg,
-
-      /// change contentType to ContentType.success, ContentType.warning or ContentType.help for variants
-      contentType: ContentType.failure,
+      contentType: ContentType.success,
     ),
   );
 
