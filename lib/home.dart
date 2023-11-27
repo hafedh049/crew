@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
         curve: Curves.easeOutExpo,
         duration: 900.ms,
         gap: 8,
-        color: Colors.grey[800],
+        color: Colors.grey.shade800,
         activeColor: Colors.purple,
         iconSize: 24,
         tabBackgroundColor: Colors.purple.withOpacity(0.1),
