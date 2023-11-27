@@ -55,7 +55,7 @@ class _HistoryState extends State<History> {
                               ],
                             ),
                           ],
-                        ),
+                        ),suffixIcon: IconButton(onPressed: () => _inputController.clear(), icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink)),
                       ],
                     ),
                   ),
