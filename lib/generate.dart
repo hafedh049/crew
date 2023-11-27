@@ -16,6 +16,11 @@ class _GenerateState extends State<Generate> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
+        ClipRRect(
+          child: TextField(
+            decoration: InputDecoration(border: InputBorder.none),
+          ),
+        ),
         const SizedBox(height: 20),
         Expanded(child: PrettyQrView(qrImage: _qrImage)),
       ],
