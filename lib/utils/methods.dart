@@ -3,5 +3,5 @@ import 'package:path_provider/path_provider.dart';
 
 Future<void> load() async {
   Hive.init((await getApplicationDocumentsDirectory()).path);
-  box = Hive.openBox(name);
+  box = await Hive.openBox(name);
 }
