@@ -23,6 +23,7 @@ class _ScanState extends State<Scan> {
       (Barcode scanData) => setState(
         () {
           result = scanData;
+          _start = false;
         },
       ),
     );
