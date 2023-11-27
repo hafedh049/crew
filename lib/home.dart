@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       bottomNavigationBar: GNav(
         tabs: <GButton>[
-          GButton(icon: icon),
+          GButton(icon: Font),
         ],
       ),
       body: Column(
