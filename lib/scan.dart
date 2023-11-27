@@ -60,6 +60,7 @@ class _ScanState extends State<Scan> {
               : Container(
                   width: MediaQuery.sizeOf(context).width * .9,
                   decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
                     color: grey.withOpacity(.3),
                     boxShadow: const <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))],
                   ),
