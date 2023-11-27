@@ -32,6 +32,9 @@ class _GenerateState extends State<Generate> {
               padding: const EdgeInsets.all(8),
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(5, 5))]),
               child: TextField(
+                onChanged: (String text)=>_qrKey.currentState!.setState(() {
+                  
+                }),
                 controller: _inputController,
                 decoration: const InputDecoration(border: InputBorder.none),
               ),
