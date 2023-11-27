@@ -13,7 +13,7 @@ class _HistoryState extends State<History> {
   final List? _data = box!.get("data");
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return _data == null ? :  ListView.builder(
       itemCount: ,
       itemBuilder: (BuildContext context, int index) {},
     );
