@@ -30,7 +30,11 @@ class _HistoryState extends State<History> {
                         Text(_data[index]["date"], style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
                         const SizedBox(height: 20),
                         Row(
-                          children: <Widget>[
+                          children: <Widget>[ Container(
+              padding: const EdgeInsets.all(8),
+              decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+              child: Text(scanData.code!, style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
+            )
                             Text(_data[index]["date"], style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w600)),
                           ],
                         ),
