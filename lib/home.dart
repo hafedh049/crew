@@ -41,12 +41,12 @@ class _HomeState extends State<Home> {
       text: 'Likes',onPressed: (){},
     ),
     GButton(
-      icon: LineIcons.search,
+      icon: FontAwesome.user,
       text: 'Search',   onPressed: (){},
     ),
     GButton(
       icon: LineIcons.user,
-      text: 'Profile',
+      text: 'Profile',   onPressed: (){},
     )
   ]
 )
