@@ -50,7 +50,10 @@ class _ScanState extends State<Scan> {
                 )
               : Container(
                   padding: const EdgeInsets.all(8),
-                  child: Text("SCAN",style: ,),
+                  child: Text(
+                    "SCAN",
+                    style: TextStyle(),
+                  ),
                 ),
         ),
       ],
