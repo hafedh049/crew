@@ -58,9 +58,9 @@ class _ScanState extends State<Scan> {
           child: _isOpened
               ? QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated)
               : Container(
-                  decoration: const BoxDecoration(
-                    color: grey,
-                    boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))],
+                  decoration: BoxDecoration(
+                    color: grey.withOpacity(.3),
+                    boxShadow: const <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))],
                   ),
                 ),
         ),
