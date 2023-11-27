@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code,
             active: true,
+            haptic: true,
           ),
         ],
       ),
