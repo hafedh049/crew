@@ -25,6 +25,7 @@ class _ScanState extends State<Scan> {
     _controller!.scannedDataStream.listen(
       (Barcode scanData) => setState(
         () {
+          print(scanData.code);
           _result = scanData;
           _isOpened = false;
           _isBack = false;
