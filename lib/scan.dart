@@ -17,7 +17,7 @@ class _ScanState extends State<Scan> {
   bool _isBack = false;
   bool _isFlash = false;
   final GlobalKey<State> _qrKey = GlobalKey<State>(debugLabel: 'QR');
-  Barcode? result;
+  Barcode? _result;
   QRViewController? _controller;
 
   void _onQRViewCreated(QRViewController controller) {
@@ -25,7 +25,7 @@ class _ScanState extends State<Scan> {
     controller.scannedDataStream.listen(
       (Barcode scanData) => setState(
         () {
-          result = scanData;
+          _result = scanData;
           _isOpened = false;
           _isBack = false;
           _isFlash = false;
@@ -38,15 +38,15 @@ class _ScanState extends State<Scan> {
   void reassemble() {
     super.reassemble();
     if (Platform.isAndroid) {
-      controller!.pauseCamera();
+      _controller!.pauseCamera();
     } else if (Platform.isIOS) {
-      controller!.resumeCamera();
+      _controller!.resumeCamera();
     }
   }
 
   @override
   void dispose() {
-    controller?.dispose();
+    _controller?.dispose();
     super.dispose();
   }
 
@@ -92,8 +92,8 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () {
-                _
+              onTap: () async{
+              await  _controller!.flipCamera()
                 setState(() => _isBack = true);
               },
               child: AnimatedContainer(
