@@ -29,11 +29,7 @@ class _GenerateState extends State<Generate> {
           ),
         ),
         const SizedBox(height: 20),
-        Expanded(
-            child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: PrettyQrView(qrImage: _qrImage),
-        )),
+        Expanded(child: Padding(padding: const EdgeInsets.all(16), child: PrettyQrView(qrImage: _qrImage))),
       ],
     );
   }
