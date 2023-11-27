@@ -19,6 +19,16 @@ class _ScanState extends State<Scan> {
   }
 
   @override
+  void reassemble() {
+    super.reassemble();
+    if (Platform.isAndroid) {
+      controller!.pauseCamera();
+    } else if (Platform.isIOS) {
+      controller!.resumeCamera();
+    }
+  }
+
+  @override
   void dispose() {
     controller?.dispose();
     super.dispose();
