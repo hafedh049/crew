@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
         duration: 500.ms,
         gap: 8,
         color: grey,
-        activeColor: teal,
+        activeColor: grey,
         iconSize: 25,
         tabBackgroundColor: teal,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
