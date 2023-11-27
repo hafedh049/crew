@@ -21,7 +21,7 @@ class _ScanState extends State<Scan> {
   void _onQRViewCreated(QRViewController controller) {
     _controller = controller;
     _controller!.scannedDataStream.listen(
-      (Barcode scanData) {
+      (Barcode scanData) async {
         setState(
           () {
             _isOpened = false;
