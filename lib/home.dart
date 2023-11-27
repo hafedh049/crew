@@ -12,6 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final GlobalKey<State> _screensKey = GlobalKey<State>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,36 +34,35 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Scan',
-            onPressed: () => currentIndex = 0,
+            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 0),
           ),
           GButton(
             icon: FontAwesome.cubes,
             text: 'Generate',
-            onPressed: () => currentIndex = 1,
+            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 1),
           ),
           GButton(
             icon: FontAwesome.user,
             text: 'Owner',
-            onPressed: () => currentIndex = 2,
+            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 2),
           ),
           GButton(
             icon: Bootstrap.clock_history,
             text: 'History',
-            onPressed: () => currentIndex = 3,
+            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 3),
           )
         ],
       ),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            child: PageView.builder(
-              itemCount: 4,
-              physics: const BouncingScrollPhysics(),
-              onPageChanged: (int index) => currentIndex = index,
-              itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
-            ),
-          ),
-        ],
+      body: StatefulBuilder(
+        key: _screensKey,
+        builder: (BuildContext context, void Function(void Function()) _) {
+          return PageView.builder(
+            itemCount: 4,
+            physics: const BouncingScrollPhysics(),
+            onPageChanged: (int index) => _(() => currentIndex = index),
+            itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+          );
+        },
       ),
     );
   }
