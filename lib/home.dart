@@ -1,4 +1,5 @@
 import 'package:crew/utils/globals.dart';
+import 'package:crew/utils/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -87,7 +88,7 @@ class _HomeState extends State<Home> {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: FutureBuilder<bool>(
-              stream: null,
+              future: load(),
               builder: (context, snapshot) {
                 return PageView.builder(
                   itemCount: 4,
