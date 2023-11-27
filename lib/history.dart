@@ -14,7 +14,7 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return _data == null ? :  ListView.builder(
-      itemCount: ,
+      itemCount:_data.length ,
       itemBuilder: (BuildContext context, int index) {},
     );
   }
