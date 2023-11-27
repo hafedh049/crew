@@ -2,6 +2,7 @@ import 'package:crew/utils/globals.dart';
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tilt/flutter_tilt.dart';
+import 'package:icons_plus/icons_plus.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
@@ -56,7 +57,7 @@ class _HistoryState extends State<History> {
                             ),
                           ],
                         ),
-                        IconButton(onPressed: () {}, icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink)),
+                        IconButton(onPressed: () {}, icon: const Icon(Bootstrap.x, size: 15, color: pink)),
                       ],
                     ),
                   ),
