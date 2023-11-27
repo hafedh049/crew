@@ -68,7 +68,7 @@ _controller!.
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () async {
-                _isOpened ?   await _controller!.stopCamera():await _controller!.stopCamera();
+                _isOpened ?   await _controller!.resumeCamera():await _controller!.stopCamera();
                 setState(() => _isOpened= !_isOpened);
               },
               child: AnimatedContainer(
