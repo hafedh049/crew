@@ -22,13 +22,14 @@ class _ScanState extends State<Scan> {
 
   void _onQRViewCreated(QRViewController controller) {
     _controller = controller;
-    controller.scannedDataStream.listen(
+    _controller!.scannedDataStream.listen(
       (Barcode scanData) => setState(
         () {
           _result = scanData;
           _isOpened = false;
           _isBack = false;
           _isFlash = false;
+_controller!.
         },
       ),
     );
@@ -66,7 +67,10 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () => setState(() => _isOpened = !_isOpened),
+              onTap: () async {
+                await _controller!.toggleFlash();
+                setState(() => _isFlash = !_isFlash);
+              },
               child: AnimatedContainer(
                 duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
