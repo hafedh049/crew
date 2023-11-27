@@ -9,6 +9,7 @@ class History extends StatefulWidget {
 }
 
 class _HistoryState extends State<History> {
+  final List? _data = box!.get;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
