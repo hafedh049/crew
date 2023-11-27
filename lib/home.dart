@@ -21,6 +21,24 @@ class _HomeState extends State<Home> {
             haptic: true,
             onPressed: () {},
           ),
+          GButton(
+            icon: Bootstrap.qr_code,
+            active: true,
+            haptic: true,
+            onPressed: () {},
+          ),
+          GButton(
+            icon: Bootstrap.qr_code,
+            active: true,
+            haptic: true,
+            onPressed: () {},
+          ),
+          GButton(
+            icon: Bootstrap.qr_code,
+            active: true,
+            haptic: true,
+            onPressed: () {},
+          ),
         ],
       ),
       body: const Column(
