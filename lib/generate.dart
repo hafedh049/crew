@@ -41,7 +41,7 @@ class _GenerateState extends State<Generate> {
           Expanded(
             child: StatefulBuilder(
               key: _qrKey,
-              builder: (context, snapshot) {
+              builder: (BuildContext context,void Function(void Function()) _) {
                 return SfBarcodeGenerator(
                   value: _inputController.text.trim(),
                   barColor: pink,
