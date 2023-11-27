@@ -19,6 +19,7 @@ class _HistoryState extends State<History> {
         ? const Center(child: Text("NO SCANS YET.", style: TextStyle(color: pink, fontSize: 16, fontWeight: FontWeight.w500)))
         : ListView.builder(
             itemCount: _data.length,
+            padding: EdgeInsets.zero,
             itemBuilder: (BuildContext context, int index) {
               return Tilt(
                 child: TiltParallax(
