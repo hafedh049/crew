@@ -52,7 +52,11 @@ class _ScanState extends State<Scan> {
         Expanded(
           flex: 5,
           child: _start
-              ? QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated)
+              ? Column(
+                  children: <Widget>[
+                    QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated),
+                  ],
+                )
               : Center(
                   child: InkWell(
                     hoverColor: transparent,
