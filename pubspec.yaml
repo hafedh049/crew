@@ -15,6 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   pretty_qr_code: ^3.0.0
   google_nav_bar: ^5.0.6
+  hive: ^2.2.3
 
 dev_dependencies:
   flutter_test:
