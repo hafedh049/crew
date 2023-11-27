@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 const Color pink = Colors.pinkAccent;
 const Color grey = Color.fromARGB(255, 51, 56, 66);
 const Color white = Colors.white;
+const Color transparent = Colors.transparent;
 
 final List<Map<String, dynamic>> screens = <Map<String, dynamic>>[
   <String, dynamic>{"screen": const Scan()},
