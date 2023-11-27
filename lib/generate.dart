@@ -33,10 +33,7 @@ class _GenerateState extends State<Generate> {
             controller: _inputController,
             decoration: InputDecoration(
               border: InputBorder.none,
-              suffixIcon: IconButton(
-                onPressed: () => _inputController.clear(),
-                icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
-              ),
+              suffixIcon: IconButton(onPressed: () => _inputController.clear(), icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink)),
               prefixIcon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
             ),
           ),
