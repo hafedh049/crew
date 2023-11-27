@@ -48,12 +48,6 @@ class _ScanState extends State<Scan> {
             onQRViewCreated: _onQRViewCreated,
           ),
         ),
-        Expanded(
-          flex: 1,
-          child: Center(
-            child: (result != null) ? Text('Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}') : const Text('Scan a code'),
-          ),
-        )
       ],
     );
   }
