@@ -22,6 +22,7 @@ dependencies:
   qr_code_scanner: ^1.0.1
   flutter_tilt: ^2.2.0
   date_format: ^2.0.7
+  super_clipboard: ^0.7.3
 
 dev_dependencies:
   flutter_test:
