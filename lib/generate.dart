@@ -11,6 +11,12 @@ class Generate extends StatefulWidget {
 class _GenerateState extends State<Generate> {
   final QrImage _qrImage = QrImage(QrCode(8, QrErrorCorrectLevel.H));
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
