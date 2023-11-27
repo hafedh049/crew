@@ -57,14 +57,6 @@ class _HomeState extends State<Home> {
             },
           ),
           GButton(
-            icon: FontAwesome.user,
-            text: ' Owner',
-            onPressed: () {
-              currentIndex = 2;
-              _screensController.jumpToPage(currentIndex);
-            },
-          ),
-          GButton(
             icon: Bootstrap.clock_history,
             text: ' History',
             onPressed: () {
