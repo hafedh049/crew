@@ -62,6 +62,7 @@ class _HistoryState extends State<History> {
                                       ':',
                                       nn,
                                       ' ',
+                                      ' ',
                                     ]),
                                     style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w300))),
                           ],
