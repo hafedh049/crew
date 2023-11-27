@@ -1,6 +1,5 @@
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
