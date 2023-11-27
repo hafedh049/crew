@@ -1,3 +1,4 @@
+import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> {
         duration: 900.ms,
         gap: 8,
         color: Colors.grey.shade800,
-        activeColor: Colors.purple,
+        activeColor: teal,
         iconSize: 24,
         tabBackgroundColor: Colors.purple.withOpacity(0.1),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
