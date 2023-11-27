@@ -28,7 +28,7 @@ class _ScanState extends State<Scan> {
                 _isFlash = false;
               },
             ),
-        box;);
+        box!.put(key, value););
   }
 
   @override
