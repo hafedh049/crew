@@ -38,17 +38,17 @@ class _HomeState extends State<Home> {
           GButton(
             icon: FontAwesome.cubes,
             text: 'Generate',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 1),
+            onPressed: () => currentIndex = 1,
           ),
           GButton(
             icon: FontAwesome.user,
             text: 'Owner',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 2),
+            onPressed: () => currentIndex = 2,
           ),
           GButton(
             icon: Bootstrap.clock_history,
             text: 'History',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 3),
+            onPressed: () => currentIndex = 3,
           )
         ],
       ),
