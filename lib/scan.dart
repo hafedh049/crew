@@ -29,7 +29,6 @@ class _ScanState extends State<Scan> {
           _isOpened = false;
           _isBack = false;
           _isFlash = false;
-_controller!.
         },
       ),
     );
@@ -68,8 +67,8 @@ _controller!.
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () async {
-                _isOpened ?   await _controller!.resumeCamera():await _controller!.stopCamera();
-                setState(() => _isOpened= !_isOpened);
+                _isOpened ? await _controller!.resumeCamera() : await _controller!.stopCamera();
+                setState(() => _isOpened = !_isOpened);
               },
               child: AnimatedContainer(
                 duration: 700.ms,
