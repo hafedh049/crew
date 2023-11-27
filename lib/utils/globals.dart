@@ -14,3 +14,5 @@ final List<Map<String, dynamic>> screens = <Map<String, dynamic>>[
   <String, dynamic>{"screen": const Owner()},
   <String, dynamic>{"screen": const History()},
 ];
+
+int currentIndex = 0;
