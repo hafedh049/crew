@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
         tabs: <GButton>[
           GButton(
             icon: Bootstrap.qr_code_scan,
-            text: 'Scan',
+            text: ' Scan',
             onPressed: () {
               currentIndex = 0;
               _screensController.jumpToPage(currentIndex);
@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: FontAwesome.cubes,
-            text: 'Generate',
+            text: ' Generate',
             onPressed: () {
               currentIndex = 1;
               _screensController.jumpToPage(currentIndex);
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: FontAwesome.user,
-            text: 'Owner',
+            text: ' Owner',
             onPressed: () {
               currentIndex = 2;
               _screensController.jumpToPage(currentIndex);
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: Bootstrap.clock_history,
-            text: 'History',
+            text: ' History',
             onPressed: () {
               currentIndex = 3;
               _screensController.jumpToPage(currentIndex);
