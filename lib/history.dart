@@ -66,7 +66,7 @@ class _HistoryState extends State<History> {
                             onPressed: () async {
                               await box!.put("data", _data..removeAt(index));
                               final item = DataWriterItem();
-                              item.add(Formats.plainText(scanData.code.toString()));
+                              item.add(Formats.plainText(_data[index]["text"]));
                               await ClipboardWriter.instance.write(<DataWriterItem>[item]);
                               // ignore: use_build_context_synchronously
                               showSnack("Copied To Clipboard", context);
