@@ -22,43 +22,40 @@ class _GenerateState extends State<Generate> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Column(
-        children: <Widget>[
-          const SizedBox(height: 60),
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
-            child: TextField(
-              onChanged: (String text) => _qrKey.currentState!.setState(() {}),
-              controller: _inputController,
-              decoration: InputDecoration(
-                border: InputBorder.none,
-                suffixIcon: IconButton(
-                  onPressed: () => _inputController.clear(),
-                  icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
-                ),
+    return Column(
+      children: <Widget>[
+        const SizedBox(height: 60),
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+          child: TextField(
+            onChanged: (String text) => _qrKey.currentState!.setState(() {}),
+            controller: _inputController,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              suffixIcon: IconButton(
+                onPressed: () => _inputController.clear(),
+                icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
               ),
             ),
           ),
-          const SizedBox(height: 20),
-          Expanded(
-            child: StatefulBuilder(
-              key: _qrKey,
-              builder: (BuildContext context, void Function(void Function()) _) {
-                return Center(
-                  child: SfBarcodeGenerator(
-                    value: _inputController.text.trim(),
-                    barColor: pink,
-                    symbology: QRCode(),
-                  ),
-                );
-              },
-            ),
+        ),
+        const SizedBox(height: 20),
+        Expanded(
+          child: StatefulBuilder(
+            key: _qrKey,
+            builder: (BuildContext context, void Function(void Function()) _) {
+              return Center(
+                child: SfBarcodeGenerator(
+                  value: _inputController.text.trim(),
+                  barColor: pink,
+                  symbology: QRCode(),
+                ),
+              );
+            },
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
