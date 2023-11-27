@@ -52,7 +52,7 @@ class _ScanState extends State<Scan> {
             );
           },
         );
-        _controller!.scannedDataStream.first.then((value) async{})
+        _controller!.scannedDataStream.first.then((value) async {});
       },
     );
   }
