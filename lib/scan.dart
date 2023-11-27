@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class Scan extends StatefulWidget {
