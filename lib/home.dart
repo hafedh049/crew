@@ -92,6 +92,7 @@ class _HomeState extends State<Home> {
             future: load(),
             builder: (BuildContext context, AsyncSnapshot<Box> snapshot) {
               if (snapshot.hasData) {
+                box = snapshot.data!;
                 return PageView.builder(
                   itemCount: 4,
                   controller: _screensController,
