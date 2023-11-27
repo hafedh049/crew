@@ -40,6 +40,9 @@ class _GenerateState extends State<Generate> {
           Expanded(
             child: SfBarcodeGenerator(
               value: _inputController.text.trim(),
+              barColor: pink,
+              showValue: true,
+              symbology: QRCode(),
             ),
           ),
         ],
