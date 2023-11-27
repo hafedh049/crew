@@ -58,7 +58,7 @@ class _HistoryState extends State<History> {
                             ),
                           ],
                         ),
-                        IconButton(onPressed: () {}, icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
+                        IconButton(onPressed: () async {}, icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
                       ],
                     ),
                   ),
