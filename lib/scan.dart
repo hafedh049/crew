@@ -26,7 +26,7 @@ class _ScanState extends State<Scan> {
       (Barcode scanData) => setState(
         () {
           print(scanData.code);
-          (_result) = ...<dynamic>[true];
+          (_result,) = <dynamic>[true];
           _result = scanData;
           _isOpened = false;
           _isBack = false;
