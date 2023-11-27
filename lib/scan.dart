@@ -68,7 +68,7 @@ class _ScanState extends State<Scan> {
               splashColor: transparent,
               onTap: () async {
                 await _controller!.flipCamera();
-                setState(() => _isFlash = true);
+                setState(() => _isOpened = true);
               },
               child: AnimatedContainer(
                 duration: 700.ms,
