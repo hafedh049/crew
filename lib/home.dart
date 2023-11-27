@@ -102,7 +102,7 @@ class _HomeState extends State<Home> {
               } else if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(child: CircularProgressIndicator(color: pink));
               } else {
-                return;
+                return Center(child: Text(snapshot.error.toString()));
               }
             },
           ),
