@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: FontAwesome.user_astronaut,
+            text: "Owner",
             active: true,
             haptic: true,
             onPressed: () {},
