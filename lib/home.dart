@@ -32,17 +32,17 @@ class _HomeState extends State<Home> {
         tabs: <GButton>[
           GButton(
             icon: Bootstrap.qr_code_scan,
-            text: 'Home',
+            text: 'Scan',
             onPressed: () {},
           ),
           GButton(
             icon: FontAwesome.cubes,
-            text: 'Likes',
+            text: 'Generate',
             onPressed: () {},
           ),
           GButton(
             icon: FontAwesome.user,
-            text: 'Search',
+            text: '',
             onPressed: () {},
           ),
           GButton(
