@@ -1,5 +1,6 @@
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tilt/flutter_tilt.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
@@ -17,7 +18,9 @@ class _HistoryState extends State<History> {
         : ListView.builder(
             itemCount: _data.length,
             itemBuilder: (BuildContext context, int index) {
-              return;
+              return Tilt(
+                child: TiltParallax(child: child),
+              );
             },
           );
   }
