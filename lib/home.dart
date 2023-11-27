@@ -86,13 +86,17 @@ class _HomeState extends State<Home> {
         onTap: () => FocusScope.of(context).unfocus(),
         child: Padding(
           padding: const EdgeInsets.all(24),
-          child: PageView.builder(
-            itemCount: 4,
-            controller: _screensController,
-            physics: const BouncingScrollPhysics(),
-            onPageChanged: (int index) => currentIndex = index,
-            itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
-          ),
+          child: FutureBuilder<bool>(
+              stream: null,
+              builder: (context, snapshot) {
+                return PageView.builder(
+                  itemCount: 4,
+                  controller: _screensController,
+                  physics: const BouncingScrollPhysics(),
+                  onPageChanged: (int index) => currentIndex = index,
+                  itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+                );
+              }),
         ),
       ),
     );
