@@ -38,7 +38,7 @@ class _GenerateState extends State<Generate> {
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   suffixIcon: IconButton(
-                    onPressed: () {},
+                    onPressed: () => _inputController.clear(),
                     icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
                   ),
                 ),
