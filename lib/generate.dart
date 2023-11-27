@@ -14,7 +14,7 @@ class _GenerateState extends State<Generate> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    _inputController.dispose();
     super.dispose();
   }
 
