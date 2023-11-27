@@ -65,7 +65,7 @@ class _HistoryState extends State<History> {
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           IconButton(
-                            onPressed: () async => FlutterClipboard.copy('hello flutter friends').then((value) => showSnack("Copied To Clipboard", context)),
+                            onPressed: () async => FlutterClipboard.copy(_data[index]["text"]).then((value) => showSnack("Copied To Clipboard", context)),
                             icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink),
                           ),
                           IconButton(
