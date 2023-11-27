@@ -1,3 +1,4 @@
+import 'package:clipboard/clipboard.dart';
 import 'package:crew/utils/globals.dart';
 import 'package:crew/utils/methods.dart';
 import 'package:date_format/date_format.dart';
@@ -66,9 +67,6 @@ class _HistoryState extends State<History> {
                           IconButton(
                             onPressed: () async {
                               FlutterClipboard.copy('hello flutter friends').then((value) => print('copied'));
-                              final DataWriterItem item = DataWriterItem();
-                              item.add(Formats.plainText(_data[index]["text"]));
-                              await ClipboardWriter.instance.write(<DataWriterItem>[item]);
                               // ignore: use_build_context_synchronously
                               showSnack("Copied To Clipboard", context);
                             },
