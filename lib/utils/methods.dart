@@ -1,3 +1,5 @@
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -6,7 +8,7 @@ Future<Box> load() async {
   return await Hive.openBox("qr");
 }
 
-void showSnack(String msg) {
+void showSnack(String msg, BuildContext context) {
   final snackBar = SnackBar(
     /// need to set following properties for best effect of awesome_snackbar_content
     elevation: 0,
