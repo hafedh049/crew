@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
         tabs: <GButton>[
           GButton(
             icon: Bootstrap.qr_code,
+            active: true,
           ),
         ],
       ),
