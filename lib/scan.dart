@@ -38,10 +38,11 @@ class _ScanState extends State<Scan> {
           box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
         }
         showModalBottomSheet(
-            context: context,
-            builder: (BuildContext context) {
-              return;
-            });
+          context: context,
+          builder: (BuildContext context) {
+            return;
+          },
+        );
       },
     );
   }
