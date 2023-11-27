@@ -76,6 +76,7 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           PageView.builder(
             itemCount: 4,
+            controller: _screensController,
             physics: const BouncingScrollPhysics(),
             onPageChanged: (int index) => currentIndex = index,
             itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
