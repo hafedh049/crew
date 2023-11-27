@@ -1,8 +1,10 @@
 import 'package:crew/utils/globals.dart';
+import 'package:crew/utils/methods.dart';
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tilt/flutter_tilt.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:super_clipboard/super_clipboard.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
