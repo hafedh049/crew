@@ -45,7 +45,7 @@ class _HistoryState extends State<History> {
                           children: <Widget>[
                             Container(
                               padding: const EdgeInsets.all(8),
-                              decoration: const BoxDecoration(color: white, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+                              decoration: const BoxDecoration(color: pink, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
                               child: const Text("Date", style: TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
                             ),
                             const SizedBox(width: 10),
