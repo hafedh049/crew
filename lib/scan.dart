@@ -46,7 +46,7 @@ class _ScanState extends State<Scan> {
           child:_start ?  QRView(
             key: _qrKey,
             onQRViewCreated: _onQRViewCreated,
-          ),
+          ) : ,
         ),
       ],
     );
