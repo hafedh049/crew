@@ -28,7 +28,7 @@ class _GenerateState extends State<Generate> {
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Container(
-              decoration: ,
+              decoration: BoxDecoration(),
               child: TextField(
                 controller: _inputController,
                 decoration: const InputDecoration(border: InputBorder.none),
@@ -36,7 +36,7 @@ class _GenerateState extends State<Generate> {
             ),
           ),
           const SizedBox(height: 20),
-          Expanded(child: PrettyQrView(qrImage: _qrImage,decoration: PrettyQrDecoration())),
+          Expanded(child: PrettyQrView(qrImage: _qrImage, decoration: PrettyQrDecoration())),
         ],
       ),
     );
