@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                 return PageView.builder(
                   itemCount: 4,
                   controller: _screensController,
-                  physics: const BouncingScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   onPageChanged: (int index) => currentIndex = index,
                   itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
                 );
