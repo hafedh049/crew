@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: const PageView(),
+      body: PageView.builder(itemBuilder: () {}),
     );
   }
 }
