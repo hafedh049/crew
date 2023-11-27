@@ -9,7 +9,7 @@ class Scan extends StatefulWidget {
 }
 
 class _ScanState extends State<Scan> {
-  @override
+  ²@override
   Widget build(BuildContext context) {
     return Center(child: PrettyQrView(qrImage: _qrImage));
   }
