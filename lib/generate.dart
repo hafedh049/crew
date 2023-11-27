@@ -10,6 +10,6 @@ class Generate extends StatefulWidget {
 class _GenerateState extends State<Generate> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container();
   }
 }
