@@ -1,3 +1,4 @@
+import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
 
@@ -28,7 +29,7 @@ class _GenerateState extends State<Generate> {
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Container(
-              decoration: const BoxDecoration(),
+              decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: teal, blurStyle: BlurStyle.outer)]),
               child: TextField(
                 controller: _inputController,
                 decoration: const InputDecoration(border: InputBorder.none),
