@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:clipboard/clipboard.dart';
 import 'package:crew/utils/globals.dart';
 import 'package:crew/utils/methods.dart';
 import 'package:flutter/material.dart';
@@ -55,11 +56,8 @@ class _ScanState extends State<Scan> {
               child: Row(
                 children: <Widget>[
                   IconButton(
-                      onPressed: () async {
-                       FlutterClipboard.copy(scanData.code.toString()).then((value) => showSnack("Copied To Clipboard", context))
-                        // ignore: use_build_context_synchronously
-                        showSnack("Copied To Clipboard", context);
-                      },
+                      onPressed: () async 
+                        FlutterClipboard.copy(scanData.code.toString()).then((value) => showSnack("Copied To Clipboard", context)),
                       icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
                   const SizedBox(width: 20),
                   Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
