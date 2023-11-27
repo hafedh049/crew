@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
               currentIndex = 3;
               _screensController.jumpToPage(currentIndex);
             },
-          )
+          ),
         ],
       ),
       body: GestureDetector(
