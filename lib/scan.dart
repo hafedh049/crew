@@ -56,10 +56,8 @@ class _ScanState extends State<Scan> {
                   IconButton(
                       onPressed: () async {
                         final item = DataWriterItem();
-                        item.add(Formats.htmlText('<b>HTML text</b>'));
                         item.add(Formats.plainText('plain text'));
-                        item.add(Formats.png(imageData));
-                        await ClipboardWriter.instance.write([item]);
+                        await ClipboardWriter.instance.write(<DataWriterItem>[item]);
                       },
                       icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
                   const SizedBox(width: 20),
