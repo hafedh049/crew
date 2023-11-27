@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
         builder: (BuildContext context, void Function(void Function()) _) {
           return PageView.builder(
             itemCount: 4,
-            onPageChanged: (int index) => currentIndex = index,
+            onPageChanged: (int index) => _(() => currentIndex = index),
             itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
           );
         },
