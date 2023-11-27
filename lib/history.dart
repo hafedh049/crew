@@ -65,6 +65,7 @@ class _HistoryState extends State<History> {
                         children: <Widget>[
                           IconButton(
                             onPressed: () async {
+                              FlutterClipboard.copy('hello flutter friends').then((value) => print('copied'));
                               final DataWriterItem item = DataWriterItem();
                               item.add(Formats.plainText(_data[index]["text"]));
                               await ClipboardWriter.instance.write(<DataWriterItem>[item]);
