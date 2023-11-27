@@ -10,10 +10,10 @@ class Scan extends StatefulWidget {
 
 class _ScanState extends State<Scan> {
   final QrImage _qrImage = QrImage(
-    QrCode(typeNumber, errorCorrectLevel)..addData("Hafedh"),
+    QrCode(100, 100)..addData("Hafedh"),
   );
   @override
   Widget build(BuildContext context) {
-    return PrettyQrView(qrImage: qrImage);
+    return PrettyQrView(qrImage: _qrImage);
   }
 }
