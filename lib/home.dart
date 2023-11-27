@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
           padding: const EdgeInsets.all(24),
           child: FutureBuilder<bool>(
               future: load(),
-              builder: (context, snapshot) {
+              builder: (context, AsyncSnapshot<bool> snapshot) {
                 return PageView.builder(
                   itemCount: 4,
                   controller: _screensController,
