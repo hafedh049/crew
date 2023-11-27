@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
             onPressed: () {},
           ),
           GButton(
-            icon: LineIcons.user,
+            icon: Bootstrap.clock_history,
             text: 'Profile',
             onPressed: () {},
           )
