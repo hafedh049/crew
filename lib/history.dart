@@ -66,8 +66,7 @@ class _HistoryState extends State<History> {
                         children: <Widget>[
                           IconButton(
                             onPressed: () async {
-                              FlutterClipboard.copy('hello flutter friends').then((value) =>  showSnack("Copied To Clipboard", context););
-                             
+                              FlutterClipboard.copy('hello flutter friends').then((value) => showSnack("Copied To Clipboard", context));
                             },
                             icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink),
                           ),
