@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
         haptic: true,
         tabBorderRadius: 5,
         tabActiveBorder: Border.all(color: Colors.black, width: 1),
-        tabBorder: Border.all(color: Colors.grey, width: 1),
+        tabBorder: Border.all(color: Colors.grey, width: 0),
         curve: Curves.easeOutExpo,
         duration: 500.ms,
         gap: 8,
