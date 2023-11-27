@@ -23,6 +23,7 @@ dependencies:
   flutter_tilt: ^2.2.0
   date_format: ^2.0.7
   awesome_snackbar_content: ^0.1.3
+  clipboard: ^0.1.3
 
 dev_dependencies:
   flutter_test:
