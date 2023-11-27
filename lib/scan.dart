@@ -78,6 +78,17 @@ class _ScanState extends State<Scan> {
                       child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
                     ),
                   ),
+                  InkWell(
+                    hoverColor: transparent,
+                    highlightColor: transparent,
+                    splashColor: transparent,
+                    onTap: () => setState(() => _start = true),
+                    child: Container(
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
+                      padding: const EdgeInsets.all(8),
+                      child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
+                    ),
+                  ),
                 ],
               ),
             ],
