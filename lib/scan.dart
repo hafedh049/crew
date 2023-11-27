@@ -50,42 +50,27 @@ class _ScanState extends State<Scan> {
     return Column(
       children: <Widget>[
         Expanded(
-          flex: 5,
-          child: _start
-              ? Column(
+            flex: 5,
+            child: Column(
+              children: <Widget>[
+                QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated),
+                Wrap(
                   children: <Widget>[
-                    QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated),
-                    Wrap(
-                      children: <Widget>[
-                        InkWell(
-                          hoverColor: transparent,
-                          highlightColor: transparent,
-                          splashColor: transparent,
-                          onTap: () => setState(() => _start = true),
-                          child: Container(
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
-                            padding: const EdgeInsets.all(8),
-                            child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
-                          ),
-                        ),
-                      ],
+                    InkWell(
+                      hoverColor: transparent,
+                      highlightColor: transparent,
+                      splashColor: transparent,
+                      onTap: () => setState(() => _start = true),
+                      child: Container(
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
+                        padding: const EdgeInsets.all(8),
+                        child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
+                      ),
                     ),
                   ],
-                )
-              : Center(
-                  child: InkWell(
-                    hoverColor: transparent,
-                    highlightColor: transparent,
-                    splashColor: transparent,
-                    onTap: () => setState(() => _start = true),
-                    child: Container(
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
-                      padding: const EdgeInsets.all(8),
-                      child: const Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
-                    ),
-                  ),
                 ),
-        ),
+              ],
+            )),
       ],
     );
   }
