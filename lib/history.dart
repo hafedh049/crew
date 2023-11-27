@@ -61,6 +61,7 @@ class _HistoryState extends State<History> {
                         IconButton(
                             onPressed: () async {
                               await box!.put("data", _data..removeAt(index));
+                              setState(() {});
                             },
                             icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
                       ],
