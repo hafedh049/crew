@@ -30,7 +30,7 @@ class _GenerateState extends State<Generate> {
             borderRadius: BorderRadius.circular(5),
             child: Container(
               padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: grey, boxShadow: const <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer)]),
+              decoration: BoxDecoration(color: grey, boxShadow: const <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(5, 5))]),
               child: TextField(
                 controller: _inputController,
                 decoration: const InputDecoration(border: InputBorder.none),
