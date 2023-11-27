@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
         tabBorderRadius: 5,
         tabActiveBorder: Border.all(color: grey, width: 1),
         tabBorder: Border.all(color: Colors.grey, width: 0),
-        curve: Curves.easeOutExpo,
+        curve: Curves.linear,
         duration: 500.ms,
         gap: 8,
         color: Colors.grey.shade800,
