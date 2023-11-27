@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                   controller: _screensController,
                   physics: const NeverScrollableScrollPhysics(),
                   onPageChanged: (int index) => currentIndex = index,
-                  itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+                  itemBuilder: (BuildContext context, int index) => screens[index],
                 );
               } else if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(child: CircularProgressIndicator(color: pink));
