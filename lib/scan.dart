@@ -43,7 +43,7 @@ class _ScanState extends State<Scan> {
       children: <Widget>[
         Expanded(
           flex: 5,
-          child: QRView(
+          child:_start ?  QRView(
             key: _qrKey,
             onQRViewCreated: _onQRViewCreated,
           ),
