@@ -56,7 +56,7 @@ class _ScanState extends State<Scan> {
                 children: <Widget>[
                   IconButton(
                       onPressed: () async {
-                        final item = DataWriterItem();
+                        final DataWriterItem item = DataWriterItem();
                         item.add(Formats.plainText(scanData.code.toString()));
                         await ClipboardWriter.instance.write(<DataWriterItem>[item]);
                         // ignore: use_build_context_synchronously
