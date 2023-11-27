@@ -52,7 +52,15 @@ class _ScanState extends State<Scan> {
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
               child: Row(
                 children: <Widget>[
-                  IconButton(onPressed: () async {}, icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
+                  IconButton(
+                      onPressed: () async {
+                        final item = DataWriterItem();
+                        item.add(Formats.htmlText('<b>HTML text</b>'));
+                        item.add(Formats.plainText('plain text'));
+                        item.add(Formats.png(imageData));
+                        await ClipboardWriter.instance.write([item]);
+                      },
+                      icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
                   const SizedBox(width: 20),
                   Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
                 ],
