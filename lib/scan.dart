@@ -82,7 +82,7 @@ class _ScanState extends State<Scan> {
               onTap: () () async {
                 await _controller!.flipCamera();
                 setState(() => _isBack = true);
-              }
+              },
               child: AnimatedContainer(
                 duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
