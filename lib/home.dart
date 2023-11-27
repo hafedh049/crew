@@ -53,14 +53,15 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: StatefulBuilder(
-          key: null,
-          builder: (context, snapshot) {
-            return PageView.builder(
-              itemCount: 4,
-              onPageChanged: (int index) => currentIndex = index,
-              itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
-            );
-          }),
+        key: null,
+        builder: (BuildContext context, void Function(void Function()) _) {
+          return PageView.builder(
+            itemCount: 4,
+            onPageChanged: (int index) => currentIndex = index,
+            itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+          );
+        },
+      ),
     );
   }
 }
