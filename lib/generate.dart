@@ -11,6 +11,7 @@ class Generate extends StatefulWidget {
 
 class _GenerateState extends State<Generate> {
   final TextEditingController _inputController = TextEditingController();
+  final GlobalKey<State> _qrKey = GlobalKey<>()
 
   @override
   void dispose() {
@@ -38,11 +39,16 @@ class _GenerateState extends State<Generate> {
           ),
           const SizedBox(height: 20),
           Expanded(
-            child: SfBarcodeGenerator(
-              value: _inputController.text.trim(),
-              barColor: pink,
-              showValue: true,
-              symbology: QRCode(),
+            child: StatefulBuilder(
+              _qrKey,
+              builder: (context, snapshot) {
+                return SfBarcodeGenerator(
+                  value: _inputController.text.trim(),
+                  barColor: pink,
+                  showValue: true,
+                  symbology: QRCode(),
+                );
+              }
             ),
           ),
         ],
