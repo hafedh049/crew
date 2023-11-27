@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: PageView.builder(
-        itemBuilder: (BuildContext context, int index) {},
+        itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
       ),
     );
   }
