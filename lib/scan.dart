@@ -51,6 +51,7 @@ class _ScanState extends State<Scan> {
                 )
               : InkWell(
                   hoverColor: transparent,
+                  highlightColor: transparent,
                   onTap: () {},
                   child: Container(
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
