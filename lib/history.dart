@@ -14,7 +14,7 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return _data == null
-        ? Center(child: Text(scanData.code!, style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)))
+        ? Center(child: Text("NO SCANS YET.", style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)))
         : ListView.builder(
             itemCount: _data.length,
             itemBuilder: (BuildContext context, int index) {},
