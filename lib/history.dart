@@ -73,7 +73,6 @@ class _HistoryState extends State<History> {
                             },
                             icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink),
                           ),
-                          const SizedBox(width: 10),
                           IconButton(
                             onPressed: () async {
                               await box!.put("data", _data..removeAt(index));
