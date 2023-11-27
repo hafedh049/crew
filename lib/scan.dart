@@ -43,7 +43,21 @@ class _ScanState extends State<Scan> {
         await showModalBottomSheet(
           context: context,
           builder: (BuildContext context) {
-            return;
+            return Container(
+          padding: const EdgeInsets.all(8),
+          decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+          child: TextField(
+            onChanged: (String text) => _qrKey.currentState!.setState(() {}),
+            controller: _inputController,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              suffixIcon: IconButton(
+                onPressed: () => _inputController.clear(),
+                icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink),
+              ),
+            ),
+          ),
+        ),;
           },
         );
       },
