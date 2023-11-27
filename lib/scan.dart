@@ -16,7 +16,7 @@ class _ScanState extends State<Scan> {
   bool _isBack = false;
   bool _isFlash = false;
   final GlobalKey<State> _qrKey = GlobalKey<State>(debugLabel: 'QR');
-  QRViewController? _controller;
+  QRViewController? _controller = QRViewController();
 
   void _onQRViewCreated(QRViewController controller) {
     _controller = controller;
@@ -68,7 +68,7 @@ class _ScanState extends State<Scan> {
 
   @override
   void dispose() {
-    _controller!.dispose();
+    if(){_controller!.dispose();}
     super.dispose();
   }
 
