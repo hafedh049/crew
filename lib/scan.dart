@@ -50,7 +50,7 @@ class _ScanState extends State<Scan> {
                   onQRViewCreated: _onQRViewCreated,
                 )
               : Container(
-                  decoration: BoxDecoration(),
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                   padding: const EdgeInsets.all(8),
                   child: const Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
                 ),
