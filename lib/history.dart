@@ -17,7 +17,9 @@ class _HistoryState extends State<History> {
         ? const Center(child: Text("NO SCANS YET.", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)))
         : ListView.builder(
             itemCount: _data.length,
-            itemBuilder: (BuildContext context, int index) {},
+            itemBuilder: (BuildContext context, int index) {
+              return Tilt;
+            },
           );
   }
 }
