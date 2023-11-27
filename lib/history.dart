@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
@@ -10,9 +11,6 @@ class History extends StatefulWidget {
 class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
-      stream: stream,
-      builder: (BuildContext context, AsyncSnapshot<Box>){},
-    );
+    return ListView.builder(itemBuilder: (BuildContext context ,int index),)
   }
 }
