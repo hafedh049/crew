@@ -29,7 +29,7 @@ class _HistoryState extends State<History> {
                       children: <Widget>[
                         Text(_data[index]["date"], style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
                         const SizedBox(height: 20),
-                        Text(_data[index]["date"], style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
+                        Text(_data[index]["date"], style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w600)),
                       ],
                     ),
                   ),
