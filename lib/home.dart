@@ -41,7 +41,10 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Scan',
-            onPressed: () {_screensController.jumpToPage(currentIndex);} currentIndex = 0,
+            onPressed: () {
+              currentIndex = 0;
+              _screensController.jumpToPage(currentIndex);
+            },
           ),
           GButton(
             icon: FontAwesome.cubes,
