@@ -24,7 +24,7 @@ class _HistoryState extends State<History> {
                   child: Container(
                     padding: const EdgeInsets.all(8),
                     margin: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+                    decoration: const BoxDecoration(color: pink, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,11 +33,11 @@ class _HistoryState extends State<History> {
                           children: <Widget>[
                             Container(
                               padding: const EdgeInsets.all(8),
-                              decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
-                              child: const Text("Content", style: TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
+                              decoration: const BoxDecoration(color: white, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+                              child: const Text("Content", style: TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
                             ),
                             const SizedBox(width: 10),
-                            Flexible(child: Text(_data[index]["text"], style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w300))),
+                            Flexible(child: Text(_data[index]["text"], style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w300))),
                           ],
                         ),
                         const SizedBox(height: 20),
