@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
             icon: Bootstrap.qr_code,
             active: true,
             haptic: true,
+            onPressed: () {},
           ),
         ],
       ),
