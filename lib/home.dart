@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
+        selectedIndex: currentIndex,
         tabMargin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         rippleColor: Colors.grey.shade700,
         hoverColor: Colors.grey.shade800,
