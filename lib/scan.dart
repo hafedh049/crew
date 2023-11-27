@@ -41,11 +41,11 @@ class _ScanState extends State<Scan> {
           await box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
         }
 
-final item = DataWriterItem();
-    item.add(Formats.htmlText('<b>HTML text</b>'));
-    item.add(Formats.plainText('plain text'));
-    item.add(Formats.png(imageData));
-    await ClipboardWriter.instance.write([item]);
+        final item = DataWriterItem();
+        item.add(Formats.htmlText('<b>HTML text</b>'));
+        item.add(Formats.plainText('plain text'));
+        item.add(Formats.png(imageData));
+        await ClipboardWriter.instance.write([item]);
 
         // ignore: use_build_context_synchronously
         await showModalBottomSheet(
@@ -55,7 +55,11 @@ final item = DataWriterItem();
               margin: const EdgeInsets.all(16),
               padding: const EdgeInsets.all(8),
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
-              child: Row(children: <Widget>[],) Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
+              child: Row(
+                children: <Widget>[
+                  Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
+                ],
+              ),
             );
           },
         );
