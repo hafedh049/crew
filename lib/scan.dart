@@ -46,17 +46,7 @@ class _ScanState extends State<Scan> {
           flex: 5,
           child: _start
               ? QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated)
-              : InkWell(
-                  hoverColor: transparent,
-                  highlightColor: transparent,
-                  splashColor: transparent,
-                  onTap: () {},
-                  child: Container(
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
-                    padding: const EdgeInsets.all(8),
-                    child: const Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
-                  ),
-                ),
+              : 
         ),
       ],
     );
