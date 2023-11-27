@@ -15,7 +15,9 @@ class _GenerateState extends State<Generate> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[],
+      children: <Widget>[
+        PrettyQrView(qrImage: _qrImage),
+      ],
     );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pretty_qr_code/pretty_qr_code.dart';
 
 class Scan extends StatefulWidget {
   const Scan({super.key});
@@ -9,8 +8,8 @@ class Scan extends StatefulWidget {
 }
 
 class _ScanState extends State<Scan> {
-  ²@override
+  @override
   Widget build(BuildContext context) {
-    return Center(child: PrettyQrView(qrImage: _qrImage));
+    return Center();
   }
 }
