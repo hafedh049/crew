@@ -27,8 +27,9 @@ class _GenerateState extends State<Generate> {
         children: <Widget>[
           const SizedBox(height: 60),
           ClipRRect(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(5),
             child: Container(
+              padding: const EdgeInsets.all(8),
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: teal, blurStyle: BlurStyle.outer)]),
               child: TextField(
                 controller: _inputController,
