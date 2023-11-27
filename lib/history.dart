@@ -58,7 +58,11 @@ class _HistoryState extends State<History> {
                             ),
                           ],
                         ),
-                        IconButton(onPressed: () async {}, icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
+                        IconButton(
+                            onPressed: () async {
+                              await box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
+                            },
+                            icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
                       ],
                     ),
                   ),
