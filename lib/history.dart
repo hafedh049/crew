@@ -70,7 +70,7 @@ class _HistoryState extends State<History> {
                               // ignore: use_build_context_synchronously
                               showSnack("Copied To Clipboard", context);
                             },
-                            icon: const Icon(Bootstrap.x_circle, size: 15, color: pink),
+                            icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink),
                           ),
                           const SizedBox(width: 10),
                           IconButton(
