@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
-        tabs: tabs,
+        tabs: <GButton>[GButton(icon: icon)],
       ),
       body: Column(
         children: <Widget>[],
