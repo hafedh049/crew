@@ -19,7 +19,9 @@ class _HistoryState extends State<History> {
             itemCount: _data.length,
             itemBuilder: (BuildContext context, int index) {
               return Tilt(
-                child: TiltParallax(child: child),
+                child: TiltParallax(
+                  child: child,
+                ),
               );
             },
           );
