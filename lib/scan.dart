@@ -63,6 +63,7 @@ class _ScanState extends State<Scan> {
               splashColor: transparent,
               onTap: () => setState(() => _start = true),
               child: Container(
+                margin: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
                 child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
