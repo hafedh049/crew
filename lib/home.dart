@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
             onPressed: () {},
           ),
           GButton(
-            icon: Bootstrap.qr_code,
+            icon: FontAwesome.user,
             active: true,
             haptic: true,
             onPressed: () {},
