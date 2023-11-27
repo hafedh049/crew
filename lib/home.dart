@@ -52,11 +52,17 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: PageView.builder(
-        itemCount: 4,
-        physics: const BouncingScrollPhysics(),
-        onPageChanged: (int index) => currentIndex = index,
-        itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: PageView.builder(
+              itemCount: 4,
+              physics: const BouncingScrollPhysics(),
+              onPageChanged: (int index) => currentIndex = index,
+              itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+            ),
+          ),
+        ],
       ),
     );
   }
