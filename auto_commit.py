@@ -6,7 +6,6 @@ repo_path = getcwd()
 run(['cd', repo_path], shell=True)
 
 while True:
-    sleep(10)
     
     result = run(['git', 'status', '--porcelain'], capture_output=True, text=True)
 
