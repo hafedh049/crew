@@ -22,37 +22,38 @@ class _ScanState extends State<Scan> {
     _controller = controller;
     _controller!.scannedDataStream.listen(
       (Barcode scanData) async {
-        setState(
-          () {
-            _isOpened = false;
-            _isBack = false;
-            _isFlash = false;
-          },
-        );
-        final List? data = box!.get("data");
-        if (data == null) {
-          await box!.put(
-            "data",
-            [
-              {"date": DateTime.now(), "text": scanData.code}
-            ],
+        _controller!.scannedDataStream.first.then((Barcode scanData) async {
+          setState(
+            () {
+              _isOpened = false;
+              _isBack = false;
+              _isFlash = false;
+            },
           );
-        } else {
-          await box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
-        }
-        // ignore: use_build_context_synchronously
-        await showModalBottomSheet(
-          context: context,
-          builder: (BuildContext context) {
-            return Container(
-              margin: const EdgeInsets.all(8),
-              padding: const EdgeInsets.all(8),
-              decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
-              child: Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
+          final List? data = box!.get("data");
+          if (data == null) {
+            await box!.put(
+              "data",
+              [
+                {"date": DateTime.now(), "text": scanData.code}
+              ],
             );
-          },
-        );
-        _controller!.scannedDataStream.first.then((Barcode scanData) async {});
+          } else {
+            await box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
+          }
+          // ignore: use_build_context_synchronously
+          await showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return Container(
+                margin: const EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+                child: Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
+              );
+            },
+          );
+        });
       },
     );
   }
