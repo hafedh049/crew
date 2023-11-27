@@ -26,13 +26,17 @@ class _GenerateState extends State<Generate> {
         children: <Widget>[
           const SizedBox(height: 60),
           ClipRRect(
-            child: TextField(
-              controller: _inputController,
-              decoration: const InputDecoration(border: InputBorder.none),
+            borderRadius: BorderRadius.circular(15),
+            child: Container(
+              decoration: ,
+              child: TextField(
+                controller: _inputController,
+                decoration: const InputDecoration(border: InputBorder.none),
+              ),
             ),
           ),
           const SizedBox(height: 20),
-          Expanded(child: PrettyQrView(qrImage: _qrImage)),
+          Expanded(child: PrettyQrView(qrImage: _qrImage,decoration: PrettyQrDecoration())),
         ],
       ),
     );
