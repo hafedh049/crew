@@ -42,12 +42,6 @@ class _ScanState extends State<Scan> {
           await box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
         }
 
-        final item = DataWriterItem();
-        item.add(Formats.htmlText('<b>HTML text</b>'));
-        item.add(Formats.plainText('plain text'));
-        item.add(Formats.png(imageData));
-        await ClipboardWriter.instance.write([item]);
-
         // ignore: use_build_context_synchronously
         await showModalBottomSheet(
           context: context,
