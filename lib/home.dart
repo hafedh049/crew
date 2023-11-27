@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
         tabBorder: Border.all(color: Colors.grey, width: 1),
         tabShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5), blurRadius: 8)],
         curve: Curves.easeOutExpo,
-        duration: 700.ms,
+        duration: 500.ms,
         gap: 8,
         color: Colors.grey.shade800,
         activeColor: teal,
