@@ -6,7 +6,6 @@ import 'package:crew/utils/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-import 'package:super_clipboard/super_clipboard.dart';
 
 class Scan extends StatefulWidget {
   const Scan({super.key});
