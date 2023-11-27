@@ -1,3 +1,4 @@
+import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
@@ -9,7 +10,7 @@ class History extends StatefulWidget {
 }
 
 class _HistoryState extends State<History> {
-  final List? _data = box!.get;
+  final List? _data = box!.get("data");
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
