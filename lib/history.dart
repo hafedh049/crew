@@ -26,7 +26,9 @@ class _HistoryState extends State<History> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[Text(_data[index]["date"], style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500))],
+                      children: <Widget>[
+                        Text(_data[index]["date"], style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
+                      ],
                     ),
                   ),
                 ),
