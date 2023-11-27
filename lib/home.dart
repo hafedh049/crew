@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
     ),
     GButton(
       icon: LineIcons.search,
-      text: 'Search',
+      text: 'Search',   onPressed: (){},
     ),
     GButton(
       icon: LineIcons.user,
