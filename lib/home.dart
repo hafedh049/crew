@@ -38,6 +38,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: Bootstrap.clock_history,
+            text: "History",
             active: true,
             haptic: true,
             onPressed: () {},
