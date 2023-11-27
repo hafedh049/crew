@@ -69,7 +69,7 @@ _controller!.
               splashColor: transparent,
               onTap: () async {
                 await _controller!.toggleFlash();
-                setState(() => _isFlash = !_isFlash);
+                setState(() => _isOpened= !_isOpened);
               },
               child: AnimatedContainer(
                 duration: 700.ms,
