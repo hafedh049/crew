@@ -79,7 +79,7 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () => setState(() => _isOpened = true),
+              onTap: () => setState(() => _isFlash = true),
               child: AnimatedContainer(
                 duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
