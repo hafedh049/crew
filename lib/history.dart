@@ -64,7 +64,6 @@ class _HistoryState extends State<History> {
                         children: <Widget>[
                           IconButton(
                             onPressed: () async {
-                              await box!.put("data", _data..removeAt(index));
                               final item = DataWriterItem();
                               item.add(Formats.plainText(_data[index]["text"]));
                               await ClipboardWriter.instance.write(<DataWriterItem>[item]);
