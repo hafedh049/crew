@@ -55,6 +55,9 @@ class _ScanState extends State<Scan> {
               ? Column(
                   children: <Widget>[
                     QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated),
+                    Wrap(
+                      children: <Widget>[],
+                    ),
                   ],
                 )
               : Center(
