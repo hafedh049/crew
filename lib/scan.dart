@@ -56,9 +56,7 @@ class _ScanState extends State<Scan> {
                 children: <Widget>[
                   IconButton(
                       onPressed: () async {
-                        final DataWriterItem item = DataWriterItem();
-                        item.add(Formats.plainText(scanData.code.toString()));
-                        await ClipboardWriter.instance.write(<DataWriterItem>[item]);
+                       FlutterClipboard.copy(scanData.code.toString()).then((value) => showSnack("Copied To Clipboard", context))
                         // ignore: use_build_context_synchronously
                         showSnack("Copied To Clipboard", context);
                       },
