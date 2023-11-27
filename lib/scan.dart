@@ -79,7 +79,10 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () => setState(() => _isFlash = true),
+              onTap: () () async {
+                await _controller!.flipCamera();
+                setState(() => _isBack = true);
+              }
               child: AnimatedContainer(
                 duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
