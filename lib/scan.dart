@@ -43,10 +43,12 @@ class _ScanState extends State<Scan> {
       children: <Widget>[
         Expanded(
           flex: 5,
-          child:_start ?  QRView(
-            key: _qrKey,
-            onQRViewCreated: _onQRViewCreated,
-          ) : Container(padding: const Ed),
+          child: _start
+              ? QRView(
+                  key: _qrKey,
+                  onQRViewCreated: _onQRViewCreated,
+                )
+              : Container(padding: const EdgeInsets.all(value)),
         ),
       ],
     );
