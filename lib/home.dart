@@ -12,6 +12,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  PageController _screensController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
