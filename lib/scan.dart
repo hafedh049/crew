@@ -66,10 +66,7 @@ class _ScanState extends State<Scan> {
               hoverColor: transparent,
               highlightColor: transparent,
               splashColor: transparent,
-              onTap: () async {
-                await _controller!.flipCamera();
-                setState(() => _isOpened = true);
-              },
+              onTap: () => setState(() => _isOpened = !_isOpened),
               child: AnimatedContainer(
                 duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
@@ -83,7 +80,7 @@ class _ScanState extends State<Scan> {
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () async {
-                await _controller!.flipCamera();
+                await _controller!.toggleFlash();
                 setState(() => _isFlash = true);
               },
               child: AnimatedContainer(
