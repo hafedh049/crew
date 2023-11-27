@@ -14,8 +14,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
-  rippleColor: Colors.grey[800], // tab button ripple color when pressed
-  hoverColor: Colors.grey[700], // tab button hover color
+  rippleColor: Colors.grey.shade700, // tab button ripple color when pressed
+  hoverColor: Colors.grey.shade800, // tab button hover color
   haptic: true, // haptic feedback
   tabBorderRadius: 15, 
   tabActiveBorder: Border.all(color: Colors.black, width: 1), // tab button border
