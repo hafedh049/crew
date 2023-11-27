@@ -15,9 +15,7 @@ class _ScanState extends State<Scan> {
 
   void _onQRViewCreated(QRViewController controller) {
     this.controller = controller;
-    controller.scannedDataStream.listen((scanData) {
-      setState(() => result = scanData);
-    });
+    controller.scannedDataStream.listen((scanData) => setState(() => result = scanData));
   }
 
   @override
