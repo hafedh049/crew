@@ -22,6 +22,7 @@ class _GenerateState extends State<Generate> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
+        const SizedBox(height: 60),
         ClipRRect(
           child: TextField(
             controller: _inputController,
