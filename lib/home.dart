@@ -82,12 +82,15 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: PageView.builder(
-        itemCount: 4,
-        controller: _screensController,
-        physics: const BouncingScrollPhysics(),
-        onPageChanged: (int index) => currentIndex = index,
-        itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+      body: Padding(
+        padding: const EdgeInsets.all(24),
+        child: PageView.builder(
+          itemCount: 4,
+          controller: _screensController,
+          physics: const BouncingScrollPhysics(),
+          onPageChanged: (int index) => currentIndex = index,
+          itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
+        ),
       ),
     );
   }
