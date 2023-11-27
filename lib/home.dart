@@ -33,17 +33,17 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Scan',
-            onPressed: () {},
+            onPressed: () => currentIndex = 0,
           ),
           GButton(
             icon: FontAwesome.cubes,
             text: 'Generate',
-            onPressed: () {},
+            onPressed: () => currentIndex = 1,
           ),
           GButton(
             icon: FontAwesome.user,
             text: 'Owner',
-            onPressed: () {},
+            onPressed: () => currentIndex = 2,
           ),
           GButton(
             icon: Bootstrap.clock_history,
