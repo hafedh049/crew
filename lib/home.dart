@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
               if (snapshot.hasData) {
                 box = snapshot.data!;
                 return PageView.builder(
-                  itemCount: 4,
+                  itemCount: 3,
                   controller: _screensController,
                   physics: const NeverScrollableScrollPhysics(),
                   onPageChanged: (int index) => currentIndex = index,
