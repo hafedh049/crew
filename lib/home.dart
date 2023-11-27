@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
         iconSize: 24,
         tabBackgroundColor: Colors.purple.withOpacity(0.1),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-        tabs: [
+        tabs: <GButton>[
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Home',
