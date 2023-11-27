@@ -12,7 +12,7 @@ class _HistoryState extends State<History> {
   Widget build(BuildContext context) {
     return StreamBuilder(
       stream: stream,
-      builder: builder,
+      builder: (BuildContext context, AsyncSnapshot<Box>){},
     );
   }
 }
