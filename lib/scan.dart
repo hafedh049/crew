@@ -14,6 +14,22 @@ class _ScanState extends State<Scan> {
   QRViewController? controller;
   @override
   Widget build(BuildContext context) {
-    return Center();
+    return Column(
+      children: <Widget>[
+        Expanded(
+          flex: 5,
+          child: QRView(
+            key: qrKey,
+            onQRViewCreated: _onQRViewCreated,
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Center(
+            child: (result != null) ? Text('Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}') : Text('Scan a code'),
+          ),
+        )
+      ],
+    );
   }
 }
