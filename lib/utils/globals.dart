@@ -1,6 +1,5 @@
 import 'package:crew/generate.dart';
 import 'package:crew/history.dart';
-import 'package:crew/owner.dart';
 import 'package:crew/scan.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -10,7 +9,7 @@ const Color grey = Color.fromARGB(255, 51, 56, 66);
 const Color white = Colors.white;
 const Color transparent = Colors.transparent;
 
-final List<Map<String, dynamic>> screens = <Map<String, dynamic>>[
+final List<Widget> screens = <Map<String, dynamic>>[
   <String, dynamic>{"screen": const Scan()},
   <String, dynamic>{"screen": const Generate()},
   <String, dynamic>{"screen": const Owner()},
