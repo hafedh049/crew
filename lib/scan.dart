@@ -48,7 +48,7 @@ class _ScanState extends State<Scan> {
                   key: _qrKey,
                   onQRViewCreated: _onQRViewCreated,
                 )
-              : Container(padding: const EdgeInsets.all(value)),
+              : Container(padding: const EdgeInsets.all(8)),
         ),
       ],
     );
