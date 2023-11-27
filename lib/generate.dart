@@ -38,7 +38,7 @@ class _GenerateState extends State<Generate> {
             ),
           ),
           const SizedBox(height: 20),
-          Expanded(child: PrettyQrView(qrImage: _qrImage, decoration: const PrettyQrDecoration())),
+          Expanded(child: PrettyQrView(qrImage: _qrImage)),
         ],
       ),
     );
