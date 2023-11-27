@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class Scan extends StatefulWidget {
@@ -66,7 +67,8 @@ class _ScanState extends State<Scan> {
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () => setState(() => _isOpened = true),
-              child: Container(
+              child: AnimatedContainer(
+                duration: 700.ms,
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
