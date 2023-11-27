@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:icons_plus/icons_plus.dart';
 
@@ -22,7 +23,7 @@ class _HomeState extends State<Home> {
   tabBorder: Border.all(color: Colors.grey, width: 1), // tab button border
   tabShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5), blurRadius: 8)], // tab button shadow
   curve: Curves.easeOutExpo, // tab animation curves
-  duration: Duration(milliseconds: 900), // tab animation duration
+  duration:900.ms, // tab animation duration
   gap: 8, // the tab button gap between icon and text 
   color: Colors.grey[800], // unselected icon color
   activeColor: Colors.purple, // selected icon and text color
