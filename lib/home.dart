@@ -21,7 +21,6 @@ class _HomeState extends State<Home> {
         hoverColor: Colors.grey.shade800,
         haptic: true,
         tabBorderRadius: 5,
-        //tabBorder: Border.all(color: white, width: 0),
         curve: Curves.linear,
         duration: 500.ms,
         gap: 8,
