@@ -55,7 +55,7 @@ final item = DataWriterItem();
               margin: const EdgeInsets.all(16),
               padding: const EdgeInsets.all(8),
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
-              child: Row() Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
+              child: Row(children: <Widget>[],) Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
             );
           },
         );
