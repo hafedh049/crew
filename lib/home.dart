@@ -23,16 +23,6 @@ class _HomeState extends State<Home> {
   }
 
   @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback(
-      (Duration timestamp) {
-        _screensController.jumpToPage(currentIndex);
-      },
-    );
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
