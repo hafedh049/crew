@@ -19,6 +19,7 @@ dependencies:
   icons_plus: ^4.0.0
   flutter_animate: ^4.3.0
   syncfusion_flutter_barcodes: ^23.2.5
+  qr_code_scanner: ^1.0.1
 
 dev_dependencies:
   flutter_test:
