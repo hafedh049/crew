@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
         curve: Curves.linear,
         duration: 500.ms,
         gap: 8,
-        color: white,
+        color: Colors.black,
         activeColor: white,
         iconSize: 25,
         tabBackgroundColor: teal,
