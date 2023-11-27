@@ -109,8 +109,7 @@ class _ScanState extends State<Scan> {
                 await _controller!.flipCamera();
                 setState(() => _isBack = !_isBack);
               },
-              child: AnimatedContainer(
-                duration: 700.ms,
+              child: Container(
                 margin: const EdgeInsets.only(top: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
