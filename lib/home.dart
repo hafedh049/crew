@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Padding(
-          padding: const EdgeInsets.only(top: 32, left: 16, right: 16, bottom: 16),
+          padding: const EdgeInsets.only(top: 36, left: 16, right: 16, bottom: 16),
           child: FutureBuilder<Box>(
             future: load(),
             builder: (BuildContext context, AsyncSnapshot<Box> snapshot) {
