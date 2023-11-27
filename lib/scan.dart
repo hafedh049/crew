@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
@@ -58,6 +59,7 @@ class _ScanState extends State<Scan> {
                         final item = DataWriterItem();
                         item.add(Formats.plainText(scanData.code.toString()));
                         await ClipboardWriter.instance.write(<DataWriterItem>[item]);
+                        AwesomeSnackbarContent()
                       },
                       icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
                   const SizedBox(width: 20),
