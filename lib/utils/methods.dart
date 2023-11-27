@@ -15,7 +15,7 @@ void showSnack(String msg, BuildContext context) {
     behavior: SnackBarBehavior.floating,
     backgroundColor: transparent,
     content: AwesomeSnackbarContent(
-      title: 'On Snap!',
+      title: 'Snack!',
       message: 'This is an example error message that will be shown in the body of snackbar!',
 
       /// change contentType to ContentType.success, ContentType.warning or ContentType.help for variants
