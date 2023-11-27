@@ -31,9 +31,12 @@ class _ScanState extends State<Scan> {
         );
         final List? data = box!.get("data");
         if (data == null) {
-          box!.put("data", [
-            {"date": DateTime.now(), "text": scanData.code}
-          ]);
+          box!.put(
+            "data",
+            [
+              {"date": DateTime.now(), "text": scanData.code}
+            ],
+          );
         } else {
           box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
         }
