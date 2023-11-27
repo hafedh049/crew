@@ -36,8 +36,8 @@ class _HomeState extends State<Home> {
       onPressed: (){},
     ),
     GButton(
-      icon: LineIcons.heart_o,
-      text: 'Likes',
+      icon: FontAwesome.cubes,
+      text: 'Likes',onPressed: (){},
     ),
     GButton(
       icon: LineIcons.search,
