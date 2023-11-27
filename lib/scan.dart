@@ -16,7 +16,6 @@ class _ScanState extends State<Scan> {
   bool _isBack = false;
   bool _isFlash = false;
   final GlobalKey<State> _qrKey = GlobalKey<State>(debugLabel: 'QR');
-  Barcode? _result;
   QRViewController? _controller;
 
   void _onQRViewCreated(QRViewController controller) {
