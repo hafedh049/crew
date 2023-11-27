@@ -18,10 +18,10 @@ class _ScanState extends State<Scan> {
   bool _isFlash = false;
   final GlobalKey<State> _qrKey = GlobalKey<State>(debugLabel: 'QR');
   Barcode? result;
-  QRViewController? controller;
+  QRViewController? _controller;
 
   void _onQRViewCreated(QRViewController controller) {
-    this.controller = controller;
+    _controller = controller;
     controller.scannedDataStream.listen(
       (Barcode scanData) => setState(
         () {
@@ -93,6 +93,7 @@ class _ScanState extends State<Scan> {
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () {
+                _
                 setState(() => _isBack = true);
               },
               child: AnimatedContainer(
