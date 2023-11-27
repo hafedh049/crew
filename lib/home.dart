@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
         gap: 8,
         color: grey,
         activeColor: teal,
-        iconSize: 15,
+        iconSize: 25,
         tabBackgroundColor: Colors.purple.withOpacity(0.1),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tabs: <GButton>[
