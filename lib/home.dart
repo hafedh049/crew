@@ -99,8 +99,7 @@ class _HomeState extends State<Home> {
                   onPageChanged: (int index) => currentIndex = index,
                   itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
                 );
-              }
-              else if(){}
+              } else if (snapshot.connectionState == ConnectionState.waiting) {}
             },
           ),
         ),
