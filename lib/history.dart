@@ -79,6 +79,7 @@ class _HistoryState extends State<History> {
                             onPressed: () async {
                               await box!.put("data", _data..removeAt(index));
                               setState(() {});
+                              // ignore: use_build_context_synchronously
                               showSnack("Item Deleted Successfully", context);
                             },
                             icon: const Icon(Bootstrap.x_circle, size: 15, color: pink),
