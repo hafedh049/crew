@@ -23,7 +23,7 @@ class _GenerateState extends State<Generate> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=>,
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Column(
         children: <Widget>[
           const SizedBox(height: 60),
