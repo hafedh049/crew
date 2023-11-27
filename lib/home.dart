@@ -49,17 +49,26 @@ class _HomeState extends State<Home> {
           GButton(
             icon: FontAwesome.cubes,
             text: 'Generate',
-            onPressed: () => currentIndex = 1,
+            onPressed: () {
+              currentIndex = 0;
+              _screensController.jumpToPage(currentIndex);
+            },
           ),
           GButton(
             icon: FontAwesome.user,
             text: 'Owner',
-            onPressed: () => currentIndex = 2,
+            onPressed: () {
+              currentIndex = 0;
+              _screensController.jumpToPage(currentIndex);
+            },
           ),
           GButton(
             icon: Bootstrap.clock_history,
             text: 'History',
-            onPressed: () => currentIndex = 3,
+            onPressed: () {
+              currentIndex = 0;
+              _screensController.jumpToPage(currentIndex);
+            },
           )
         ],
       ),
