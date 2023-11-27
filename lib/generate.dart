@@ -1,5 +1,6 @@
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 
 class Generate extends StatefulWidget {
@@ -34,9 +35,7 @@ class _GenerateState extends State<Generate> {
               child: TextField(
                 onChanged: (String text) => _qrKey.currentState!.setState(() {}),
                 controller: _inputController,
-                decoration: const InputDecoration(
-                  border: InputBorder.none,
-                ),
+                decoration: const InputDecoration(border: InputBorder.none, suffixIcon: IconButton(onPressed: Bootstrap.x_diamond, icon: icon)),
               ),
             ),
           ),
