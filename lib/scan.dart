@@ -65,7 +65,7 @@ class _ScanState extends State<Scan> {
                           child: Container(
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                             padding: const EdgeInsets.all(8),
-                            child: const Text("SCAN", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
+                            child: const Text("STOP", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
                           ),
                         ),
                       ],
