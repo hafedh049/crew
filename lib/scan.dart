@@ -56,7 +56,7 @@ class _ScanState extends State<Scan> {
       children: <Widget>[
         Expanded(
           child: _isOpened
-              ? QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated)
+              ? ClipRRect(borderRadius: BorderRadius.circular(15), child: QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated))
               : Container(
                   width: MediaQuery.sizeOf(context).width * .9,
                   decoration: BoxDecoration(
