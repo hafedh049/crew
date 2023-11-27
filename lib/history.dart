@@ -20,7 +20,7 @@ class _HistoryState extends State<History> {
             itemBuilder: (BuildContext context, int index) {
               return Tilt(
                 child: TiltParallax(
-                  child: child,
+                  child: ,
                 ),
               );
             },
