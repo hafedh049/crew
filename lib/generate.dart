@@ -39,7 +39,7 @@ class _GenerateState extends State<Generate> {
           const SizedBox(height: 20),
           Expanded(
             child: SfBarcodeGenerator(
-              value: value,
+              value: _inputController.text.trim(),
             ),
           ),
         ],
