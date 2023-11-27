@@ -53,7 +53,7 @@ class _ScanState extends State<Scan> {
 
   @override
   void dispose() {
-    _controller?.dispose();
+    _controller!.dispose();
     super.dispose();
   }
 
