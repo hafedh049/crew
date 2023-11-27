@@ -70,7 +70,7 @@ class _ScanState extends State<Scan> {
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
-                child: const Text(_isOpened ? "STOP" : "START", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
+                child: Text(_isOpened ? "STOP" : "START", style: TextStyle(color: grey, fontSize: 16, fontWeight: FontWeight.w500)),
               ),
             ),
             InkWell(
