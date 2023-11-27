@@ -77,7 +77,6 @@ class _ScanState extends State<Scan> {
               highlightColor: transparent,
               splashColor: transparent,
               onTap: () async {
-                _isOpened ? await _controller!.resumeCamera() : await _controller!.stopCamera();
                 setState(() => _isOpened = !_isOpened);
               },
               child: AnimatedContainer(
