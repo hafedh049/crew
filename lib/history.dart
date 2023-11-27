@@ -36,6 +36,7 @@ class _HistoryState extends State<History> {
                               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
                               child: const Text("Date", style: TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
                             ),
+                            const SizedBox(width: 10),
                             Text(_data[index]["date"], style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w600)),
                           ],
                         ),
