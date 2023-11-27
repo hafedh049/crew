@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Scan',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 0),
+            onPressed: () => currentIndex = 0,
           ),
           GButton(
             icon: FontAwesome.cubes,
