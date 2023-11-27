@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
         tabBorderRadius: 5,
         curve: Curves.linear,
         duration: 500.ms,
-        gap: 8,
+        gap: 4,
         color: white,
         activeColor: Colors.black,
         iconSize: 25,
