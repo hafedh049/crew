@@ -9,9 +9,7 @@ class Generate extends StatefulWidget {
 }
 
 class _GenerateState extends State<Generate> {
-  final QrImage _qrImage = QrImage(
-    QrCode(8, QrErrorCorrectLevel.H)..addData("Hafedh"),
-  );
+  final QrImage _qrImage = QrImage(QrCode(8, QrErrorCorrectLevel.H)..addData("Hafedh"));
   @override
   Widget build(BuildContext context) {
     return Column(
