@@ -59,6 +59,7 @@ class _ScanState extends State<Scan> {
                         final item = DataWriterItem();
                         item.add(Formats.plainText(scanData.code.toString()));
                         await ClipboardWriter.instance.write(<DataWriterItem>[item]);
+                        // ignore: use_build_context_synchronously
                         showSnack("Copied To Clipboard", context);
                       },
                       icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
