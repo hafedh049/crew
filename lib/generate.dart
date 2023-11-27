@@ -24,7 +24,7 @@ class _GenerateState extends State<Generate> {
       children: <Widget>[
         ClipRRect(
           child: TextField(
-            decoration: InputDecoration(border: InputBorder.none),
+            decoration: const InputDecoration(border: InputBorder.none),
           ),
         ),
         const SizedBox(height: 20),
