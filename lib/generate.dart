@@ -1,6 +1,6 @@
 import 'package:crew/utils/globals.dart';
 import 'package:flutter/material.dart';
-import 'package:pretty_qr_code/pretty_qr_code.dart';
+import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 
 class Generate extends StatefulWidget {
   const Generate({super.key});
@@ -10,7 +10,6 @@ class Generate extends StatefulWidget {
 }
 
 class _GenerateState extends State<Generate> {
-  final QrImage _qrImage = QrImage(QrCode(8, QrErrorCorrectLevel.H));
   final TextEditingController _inputController = TextEditingController();
 
   @override
@@ -38,7 +37,11 @@ class _GenerateState extends State<Generate> {
             ),
           ),
           const SizedBox(height: 20),
-          Expanded(child: PrettyQrView(qrImage: _qrImage)),
+          Expanded(
+            child: SfBarcodeGenerator(
+              value: value,
+            ),
+          ),
         ],
       ),
     );
