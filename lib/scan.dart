@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:crew/utils/globals.dart';
+import 'package:crew/utils/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
@@ -59,7 +59,7 @@ class _ScanState extends State<Scan> {
                         final item = DataWriterItem();
                         item.add(Formats.plainText(scanData.code.toString()));
                         await ClipboardWriter.instance.write(<DataWriterItem>[item]);
-                        AwesomeSnackbarContent()
+                        showSnack("Copied To Clipboard", context)
                       },
                       icon: const Icon(Bootstrap.clipboard2, size: 15, color: pink)),
                   const SizedBox(width: 20),
