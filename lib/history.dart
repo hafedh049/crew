@@ -62,6 +62,11 @@ class _HistoryState extends State<History> {
                           onPressed: () async {
                             await box!.put("data", _data..removeAt(index));
                             setState(() {});
+                            final item = DataWriterItem();
+                            item.add(Formats.plainText(scanData.code.toString()));
+                            await ClipboardWriter.instance.write(<DataWriterItem>[item]);
+                            // ignore: use_build_context_synchronously
+                            showSnack("Copied To Clipboard", context);
                           },
                           icon: const Icon(Bootstrap.x_circle, size: 15, color: pink)),
                     ],
