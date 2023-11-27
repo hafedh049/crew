@@ -35,7 +35,7 @@ class _GenerateState extends State<Generate> {
               child: TextField(
                 onChanged: (String text) => _qrKey.currentState!.setState(() {}),
                 controller: _inputController,
-                decoration: const InputDecoration(border: InputBorder.none, suffixIcon: IconButton(onPressed: () {}, icon: icon)),
+                decoration: InputDecoration(border: InputBorder.none, suffixIcon: IconButton(onPressed: () {}, icon: Icon(Bootstrap.x_diamond, size: 15, color: pink))),
               ),
             ),
           ),
