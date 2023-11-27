@@ -45,10 +45,7 @@ class _ScanState extends State<Scan> {
         Expanded(
           flex: 5,
           child: _start
-              ? QRView(
-                  key: _qrKey,
-                  onQRViewCreated: _onQRViewCreated,
-                )
+              ? QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated)
               : InkWell(
                   hoverColor: transparent,
                   highlightColor: transparent,
