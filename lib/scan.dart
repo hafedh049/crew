@@ -79,8 +79,7 @@ class _ScanState extends State<Scan> {
               onTap: () async {
                 setState(() => _isOpened = !_isOpened);
               },
-              child: AnimatedContainer(
-                duration: 700.ms,
+              child: Container(
                 margin: const EdgeInsets.only(top: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
