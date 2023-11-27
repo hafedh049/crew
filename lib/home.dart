@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
           ),
           GButton(
             icon: FontAwesome.cubes,
-            text: "Scan",
+            text: "Generate",
             active: true,
             haptic: true,
             onPressed: () {},
