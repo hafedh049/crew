@@ -57,6 +57,7 @@ class _ScanState extends State<Scan> {
               decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
               child: Row(
                 children: <Widget>[
+                  IconButton(onPressed: () => _inputController.clear(), icon: const Icon(Bootstrap.x_diamond, size: 15, color: pink)),
                   const SizedBox(width: 20),
                   Text(scanData.code!, style: const TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500)),
                 ],
