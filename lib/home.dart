@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: StatefulBuilder(
-        key: null,
+        key: _screensKey,
         builder: (BuildContext context, void Function(void Function()) _) {
           return PageView.builder(
             itemCount: 4,
