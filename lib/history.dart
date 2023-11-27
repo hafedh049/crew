@@ -1,4 +1,5 @@
 import 'package:crew/utils/globals.dart';
+import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tilt/flutter_tilt.dart';
 
@@ -47,7 +48,7 @@ class _HistoryState extends State<History> {
                               child: const Text("Date", style: TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
                             ),
                             const SizedBox(width: 10),
-                            Flexible(child: Text(Format, style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w600))),
+                            Flexible(child: Text(formatDate(_data[index]["date"], formats), style: const TextStyle(color: pink, fontSize: 14, fontWeight: FontWeight.w600))),
                           ],
                         ),
                       ],
