@@ -27,6 +27,7 @@ class _HistoryState extends State<History> {
                     margin: const EdgeInsets.all(8),
                     decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
                     child: Stack(
+                      alignment: Alignment.topRight,
                       children: <Widget>[
                         Column(
                           mainAxisSize: MainAxisSize.min,
