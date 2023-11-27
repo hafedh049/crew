@@ -12,7 +12,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: GNav(tabs: tabs),
+      bottomNavigationBar: GNav(
+        tabs: tabs,
+      ),
       body: Column(
         children: <Widget>[],
       ),
