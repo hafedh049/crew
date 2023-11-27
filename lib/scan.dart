@@ -25,9 +25,9 @@ class _ScanState extends State<Scan> {
       (Barcode scanData) => setState(
         () {
           result = scanData;
-          bool _isOpened = false;
-          bool _isBack = false;
-          bool _isFlash = false;
+          _isOpened = false;
+          _isBack = false;
+          _isFlash = false;
         },
       ),
     );
