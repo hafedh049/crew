@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       bottomNavigationBar: GNav(
         selectedIndex: currentIndex,
-        tabMargin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        tabMargin: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         rippleColor: Colors.grey.shade700,
         hoverColor: Colors.grey.shade800,
         haptic: true,
