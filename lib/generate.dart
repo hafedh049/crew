@@ -40,7 +40,7 @@ class _GenerateState extends State<Generate> {
           const SizedBox(height: 20),
           Expanded(
             child: StatefulBuilder(
-              _qrKey,
+              key: _qrKey,
               builder: (context, snapshot) {
                 return SfBarcodeGenerator(
                   value: _inputController.text.trim(),
