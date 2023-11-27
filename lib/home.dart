@@ -100,8 +100,10 @@ class _HomeState extends State<Home> {
                   itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
                 );
               } else if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child:  CircularProgressIndicator(color: pink));
-              } else {return}
+                return const Center(child: CircularProgressIndicator(color: pink));
+              } else {
+                return;
+              }
             },
           ),
         ),
