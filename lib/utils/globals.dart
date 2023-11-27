@@ -9,7 +9,7 @@ const Color grey = Color.fromARGB(255, 51, 56, 66);
 const Color white = Colors.white;
 const Color transparent = Colors.transparent;
 
-final List<Widget> screens = <Map<String, dynamic>>[
+const List<Widget> screens = <Map<String, dynamic>>[
   <String, dynamic>{"screen": const Scan()},
   <String, dynamic>{"screen": const Generate()},
   <String, dynamic>{"screen": const Owner()},
