@@ -81,7 +81,7 @@ class _ScanState extends State<Scan> {
               splashColor: transparent,
               onTap: () async {
                 await _controller!.toggleFlash();
-                setState(() => _isFlash = true);
+                setState(() => _isFlash = !_isFlash);
               },
               child: AnimatedContainer(
                 duration: 700.ms,
