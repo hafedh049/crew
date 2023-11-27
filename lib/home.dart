@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
             icon: FontAwesome.cubes,
             text: 'Generate',
             onPressed: () {
-              currentIndex = 0;
+              currentIndex = 1;
               _screensController.jumpToPage(currentIndex);
             },
           ),
@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
             icon: FontAwesome.user,
             text: 'Owner',
             onPressed: () {
-              currentIndex = 0;
+              currentIndex = 2;
               _screensController.jumpToPage(currentIndex);
             },
           ),
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
             icon: Bootstrap.clock_history,
             text: 'History',
             onPressed: () {
-              currentIndex = 0;
+              currentIndex = 3;
               _screensController.jumpToPage(currentIndex);
             },
           )
