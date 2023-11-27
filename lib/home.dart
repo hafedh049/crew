@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: Column(
+      body: const Column(
         children: <Widget>[],
       ),
     );
