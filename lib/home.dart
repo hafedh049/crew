@@ -12,7 +12,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final GlobalKey<State> _screensKey = GlobalKey<State>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
