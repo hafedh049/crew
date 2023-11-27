@@ -81,7 +81,7 @@ class _ScanState extends State<Scan> {
               },
               child: AnimatedContainer(
                 duration: 700.ms,
-                margin: const EdgeInsets.only(bottom: 8),
+                margin: const EdgeInsets.only(top: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
                 child: Text(_isOpened ? "STOP" : "START", style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
@@ -97,7 +97,7 @@ class _ScanState extends State<Scan> {
               },
               child: AnimatedContainer(
                 duration: 700.ms,
-                margin: const EdgeInsets.only(bottom: 8),
+                margin: const EdgeInsets.only(top: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
                 child: Text("LIGHT (${_isFlash ? "OFF" : "ON"})", style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
@@ -113,7 +113,7 @@ class _ScanState extends State<Scan> {
               },
               child: AnimatedContainer(
                 duration: 700.ms,
-                margin: const EdgeInsets.only(bottom: 8),
+                margin: const EdgeInsets.only(top: 8),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: pink),
                 padding: const EdgeInsets.all(8),
                 child: Text("CAMERA (${_isBack ? "REAR" : "FRONT"})", style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
