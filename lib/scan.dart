@@ -37,6 +37,7 @@ class _ScanState extends State<Scan> {
         } else {
           box!.put("data", data..add({"date": DateTime.now(), "text": scanData.code}));
         }
+        showModalBottomSheet(context: context, builder: (BuildContext context) {});
       },
     );
   }
