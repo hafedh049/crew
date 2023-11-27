@@ -60,9 +60,7 @@ class _ScanState extends State<Scan> {
               : Container(
                   decoration: const BoxDecoration(
                     color: grey,
-                    boxShadow: <BoxShadow>[
-                      BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2)),
-                    ],
+                    boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))],
                   ),
                 ),
         ),
