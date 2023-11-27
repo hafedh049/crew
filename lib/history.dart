@@ -20,7 +20,11 @@ class _HistoryState extends State<History> {
             itemBuilder: (BuildContext context, int index) {
               return Tilt(
                 child: TiltParallax(
-                  child: ,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: const BoxDecoration(color: grey, boxShadow: <BoxShadow>[BoxShadow(color: pink, blurStyle: BlurStyle.outer, offset: Offset(2, 2))]),
+                    child: Text(scanData.code!, style: const TextStyle(color: grey, fontSize: 14, fontWeight: FontWeight.w500)),
+                  ),
                 ),
               );
             },
