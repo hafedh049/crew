@@ -12,7 +12,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final GlobalKey<State> _screensKey = GlobalKey<State>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,35 +33,34 @@ class _HomeState extends State<Home> {
           GButton(
             icon: Bootstrap.qr_code_scan,
             text: 'Scan',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 0),
+            onPressed: () => currentIndex = 0,
           ),
           GButton(
             icon: FontAwesome.cubes,
             text: 'Generate',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 1),
+            onPressed: () => currentIndex = 1,
           ),
           GButton(
             icon: FontAwesome.user,
             text: 'Owner',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 2),
+            onPressed: () => currentIndex = 2,
           ),
           GButton(
             icon: Bootstrap.clock_history,
             text: 'History',
-            onPressed: () => _screensKey.currentState!.setState(() => currentIndex = 3),
+            onPressed: () => currentIndex = 3,
           )
         ],
       ),
-      body: StatefulBuilder(
-        key: _screensKey,
-        builder: (BuildContext context, void Function(void Function()) _) {
-          return PageView.builder(
+      body: Column(
+        children: <Widget>[
+          PageView.builder(
             itemCount: 4,
             physics: const BouncingScrollPhysics(),
-            onPageChanged: (int index) => _(() => currentIndex = index),
+            onPageChanged: (int index) => currentIndex = index,
             itemBuilder: (BuildContext context, int index) => screens[index]["screen"],
-          );
-        },
+          ),
+        ],
       ),
     );
   }
