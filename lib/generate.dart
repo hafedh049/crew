@@ -20,18 +20,21 @@ class _GenerateState extends State<Generate> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        const SizedBox(height: 60),
-        ClipRRect(
-          child: TextField(
-            controller: _inputController,
-            decoration: const InputDecoration(border: InputBorder.none),
+    return Padding(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        children: <Widget>[
+          const SizedBox(height: 60),
+          ClipRRect(
+            child: TextField(
+              controller: _inputController,
+              decoration: const InputDecoration(border: InputBorder.none),
+            ),
           ),
-        ),
-        const SizedBox(height: 20),
-        Expanded(child: Padding(padding: const EdgeInsets.all(16), child: PrettyQrView(qrImage: _qrImage))),
-      ],
+          const SizedBox(height: 20),
+          Expanded(child: PrettyQrView(qrImage: _qrImage)),
+        ],
+      ),
     );
   }
 }
