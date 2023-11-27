@@ -55,6 +55,11 @@ class _ScanState extends State<Scan> {
             children: <Widget>[
               QRView(key: _qrKey, onQRViewCreated: _onQRViewCreated),
               Wrap(
+                alignment: WrapAlignment.center,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                runAlignment: WrapAlignment.center,
+                runSpacing: 20,
+                spacing: 20,
                 children: <Widget>[
                   InkWell(
                     hoverColor: transparent,
