@@ -18,6 +18,7 @@ dependencies:
   path_provider: ^2.1.1
   icons_plus: ^4.0.0
   flutter_animate: ^4.3.0
+  syncfusion_flutter_barcodes: ^23.2.5
 
 dev_dependencies:
   flutter_test:
