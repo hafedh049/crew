@@ -34,7 +34,7 @@ class _ScanState extends State<Scan> {
           box!.put("data", [
             {"date": DateTime.now(), "text": scanData.code}
           ]);
-        }
+        } else {}
       },
     );
   }
